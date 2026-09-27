@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blaze SMP | Bedrock Gens & PvP</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-fire fire-icon"></i>
+      <span>BLAZE <span class="highlight">SMP</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#shop">Kit Shop</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#discord" class="btn-discord-nav"><i class="fa-brands fa-discord"></i> Discord</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <div class="badge">Bedrock Edition • SkyGen & PvP</div>
+      <h1>Welcome to <span class="text-gradient">Blaze SMP</span></h1>
+      <p>Build your generator empire, dominate the PvP arena, and reign supreme with custom kits and rank upgrades!</p>
+      
+      <!-- IP Box -->
+      <div class="ip-container">
+        <div class="ip-info">
+          <span class="ip-label">SERVER IP:</span>
+          <span class="ip-text" id="serverIP">play.blazesmp.net</span>
+        </div>
+        <div class="ip-info">
+          <span class="ip-label">PORT:</span>
+          <span class="ip-text" id="serverPort">19132</span>
+        </div>
+        <button class="btn-copy" onclick="copyIP()">
+          <i class="fa-regular fa-copy"></i> Copy IP
+        </button>
+      </div>
+      <div id="copyNotice" class="copy-notice">IP Copied to Clipboard!</div>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <h2 class="section-title">Server <span class="highlight">Features</span></h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fa-solid fa-cubes card-icon"></i>
+        <h3>SkyGen Economy</h3>
+        <p>Place and upgrade generators to farm valuable blocks, earn coins, and advance through custom generator tiers.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-swords card-icon"></i>
+        <h3>Custom PvP Arenas</h3>
+        <p>Test your skills in high-stakes PvP zones with knockback combat, custom gear, and bounties.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-shield-halved card-icon"></i>
+        <h3>Kit Shop & Perks</h3>
+        <p>Unlock starter, VIP, and daily kits loaded with armor, tools, and generator boosters to fast-track your progress.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kit Shop Section -->
+  <section id="shop" class="section shop-section">
+    <h2 class="section-title">Featured <span class="highlight">Kits & Packages</span></h2>
+    <p class="section-desc">Get a head start on the server with exclusive generator kits and PvP loadouts.</p>
+
+    <div class="grid">
+      <!-- Starter Kit -->
+      <div class="card shop-card">
+        <div class="shop-badge">FREE</div>
+        <h3>Starter Kit</h3>
+        <div class="price">In-Game</div>
+        <ul class="kit-list">
+          <li><i class="fa-solid fa-check"></i> 1x Coal Generator</li>
+          <li><i class="fa-solid fa-check"></i> Iron Tool Set</li>
+          <li><i class="fa-solid fa-check"></i> $1,000 Starting Coins</li>
+          <li><i class="fa-solid fa-check"></i> 16x Cooked Beef</li>
+        </ul>
+        <button class="btn-primary" onclick="alert('Claim this kit in-game using /kit starter!')">Claim In-Game</button>
+      </div>
+
+      <!-- Generator Boost Kit -->
+      <div class="card shop-card featured">
+        <div class="shop-badge highlight-badge">POPULAR</div>
+        <h3>Blaze Gen Kit</h3>
+        <div class="price">Store / Tokens</div>
+        <ul class="kit-list">
+          <li><i class="fa-solid fa-check"></i> 2x Blaze Ore Generators</li>
+          <li><i class="fa-solid fa-check"></i> 2x Gen Speed Boosters</li>
+          <li><i class="fa-solid fa-check"></i> Diamond Armor Set (Unbreaking II)</li>
+          <li><i class="fa-solid fa-check"></i> $25,000 In-Game Cash</li>
+        </ul>
+        <button class="btn-primary">View in Store</button>
+      </div>
+
+      <!-- Gladiator PvP Kit -->
+      <div class="card shop-card">
+        <div class="shop-badge">PVP</div>
+        <h3>Gladiator Kit</h3>
+        <div class="price">Store / Tokens</div>
+        <ul class="kit-list">
+          <li><i class="fa-solid fa-check"></i> Netherite Sword (Sharpness III)</li>
+          <li><i class="fa-solid fa-check"></i> Full Protection IV Kit</li>
+          <li><i class="fa-solid fa-check"></i> 8x Golden Apples</li>
+          <li><i class="fa-solid fa-check"></i> Speed & Strength Potions</li>
+        </ul>
+        <button class="btn-primary">View in Store</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules Section -->
+  <section id="rules" class="section">
+    <h2 class="section-title">Server <span class="highlight">Rules</span></h2>
+    <div class="rules-container">
+      <div class="rule-item">
+        <span class="rule-num">1</span>
+        <p><strong>Fair Play:</strong> Hacks, cheats, x-ray, and exploits are strictly forbidden.</p>
+      </div>
+      <div class="rule-item">
+        <span class="rule-num">2</span>
+        <p><strong>Respect:</strong> No harassment, hate speech, or toxic behavior in global chat.</p>
+      </div>
+      <div class="rule-item">
+        <span class="rule-num">3</span>
+        <p><strong>Gen Stealing:</strong> Respect plot boundaries; griefing inside protected plots is disabled.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="discord">
+    <div class="footer-content">
+      <h3>Join the <span class="highlight">Community</span></h3>
+      <p>Connect with other players, trade generators, and get live support on our Discord server.</p>
+      <a href="https://discord.gg" target="_blank" class="btn-discord"><i class="fa-brands fa-discord"></i> Join Discord</a>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 Blaze SMP. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
